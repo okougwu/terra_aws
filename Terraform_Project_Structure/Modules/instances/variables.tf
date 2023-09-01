@@ -15,13 +15,18 @@ variable "ENVIRONMENT" {
 }
 
 variable "AWS_REGION" {
+    default = "eu-west-2" 
+}
+
+variable "AMIS" {
     type = map 
     default = {
         eu-west-1    = "ami-01b1f2cdbfcb3644e"
         eu-west-2    = "ami-0175a41d602341364"
         eu-central-1 = "ami-0071fbe485985432e"
         eu-central-2 = "ami-0d997517a25a72c5e"
-    }  
+    } 
+  
 }
 
 

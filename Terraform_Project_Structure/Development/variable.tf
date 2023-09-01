@@ -6,5 +6,5 @@ variable "AWS_REGION" {
 
 variable "ENVIRONMENT" {
     type = string
-    default = "Development"
+    default = "development"
 }

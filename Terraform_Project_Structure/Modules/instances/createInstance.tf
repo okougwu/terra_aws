@@ -1,6 +1,6 @@
 #Create Instance using Custom VPC
 #Resource key_pair
-resource "aws_key_pair" "projec_key" {
+resource "aws_key_pair" "project_key" {
     key_name = "project_key"
     public_key = file(var.public_key_path)  
 }
@@ -43,10 +43,10 @@ resource "aws_instance" "my-instance" {
     vpc_security_group_ids = [aws_security_group.ssh-sg.id] 
 
     #the public SSH key
-    key_name = aws_key_pair.projec_key.key_name
+    key_name = aws_key_pair.project_key.key_name
 
     tags = {
       Name = "instance-${var.ENVIRONMENT}"
-      Environment = var.ENV
+      Environment = var.ENVIRONMENT
     }  
 }
