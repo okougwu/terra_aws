@@ -1,6 +1,7 @@
 #Custom VPC for my Project 
 module "nkwo-vpc" {
-  source = "terraform-aws-modules/vpc/aws"
+  source  = "terraform-aws-modules/vpc/aws"
+  version = "5.1.1"
 
   name = "vpc-${var.ENVIRONMENT}"
   cidr = "10.0.0.0/16"
