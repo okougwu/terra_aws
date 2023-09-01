@@ -1,7 +1,7 @@
 #custom VPC for my project
 module "my-project-vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  #version = "5.1.1"
+  version = "5.1.1"
 
 name = "vpc-${var.ENVIRONMENT}"
 cidr = "10.0.0.0/16"
