@@ -15,3 +15,8 @@ module "dev-instances" {
     VPC_ID = module.dev-vpc.my_vpc_id
     PUBLIC_SUBNETS = module.dev-vpc.public_subnets
 }
+
+provider "aws" {
+    region = var.AWS_REGION
+    profile = "okougwu"  
+}
