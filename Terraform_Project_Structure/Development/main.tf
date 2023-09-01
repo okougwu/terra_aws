@@ -18,5 +18,4 @@ module "dev-instances" {
 
 provider "aws" {
   region = var.AWS_REGION
-  profile = "okougwu"
 }
