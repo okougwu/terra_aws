@@ -31,6 +31,7 @@ output "private_subnets" {
     value = module.my-project-vpc.private_subnets  
 }
 output "public_subnets" {
-    description = "List of Public Subnets IDs"  
+    description = "List of Public Subnets IDs" 
+    value = module.my-project-vpc.public_subnets 
 }
 
