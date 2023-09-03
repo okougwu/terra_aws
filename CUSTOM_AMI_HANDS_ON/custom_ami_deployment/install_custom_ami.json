@@ -1,7 +1,7 @@
 {
     "variables": {
-        "aws_access_key": "",
-        "aws_secret_key": ""
+        "aws_access_key": "AKIATDDNF7ZATAHJFQ6C",
+        "aws_secret_key": "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"
     },
     "builders": [
         {
