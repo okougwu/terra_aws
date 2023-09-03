@@ -15,7 +15,7 @@ variable "AMI_ID" {
 }
 
 variable "AWS_REGION" {
-default = "us-east-2"
+default = "eu-west-2"
 }
 
 variable "INSTANCE_TYPE" {
